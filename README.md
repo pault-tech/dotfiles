@@ -1,2 +1,2 @@
 # dotfiles
-Dot files for github codespaces
+dotfiles for github codespaces

@@ -1,0 +1,3 @@
+echo setting up codespace dotfiles...
+
+echo hello > /var/tmp/dotfilesetup

@@ -1,2 +1,2 @@
 # dotfiles
-dotfiles for github codespaces
+dotfiles setup for SpaceVim

@@ -6,6 +6,9 @@ date >> /var/tmp/dotfilesetup
 #install spacevim
 curl -sLf https://spacevim.org/install.sh | bash
 
+#gnu screen
+sudo apt install screen
+
 #clone other GH repos
 #NOTE: requires update to devcontainer.json https://github.com/orgs/community/discussions/36228
 cd ~/

@@ -7,7 +7,8 @@ date >> /var/tmp/dotfilesetup
 curl -sLf https://spacevim.org/install.sh | bash
 
 #gnu screen
-sudo apt install screen
+type screen || sudo apt update & sudo apt install -y screen
+type vim || sudo apt update & sudo apt install -y vim
 
 #clone other GH repos
 #NOTE: requires update to devcontainer.json https://github.com/orgs/community/discussions/36228

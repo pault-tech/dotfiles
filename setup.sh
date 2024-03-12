@@ -3,12 +3,13 @@ echo setting up codespace dotfiles...
 echo setting up codespace dotfiles > /var/tmp/dotfilesetup
 date >> /var/tmp/dotfilesetup
 
+#install vim if needed
 type vim || sudo apt update & sudo apt install -y vim
 
 #install spacevim
 curl -sLf https://spacevim.org/install.sh | bash
 
-#gnu screen
+#gnu screen if needed
 type screen || sudo apt update & sudo apt install -y screen
 
 #clone other GH repos

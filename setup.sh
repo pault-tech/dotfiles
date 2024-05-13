@@ -4,7 +4,7 @@ echo setting up codespace dotfiles > /var/tmp/dotfilesetup
 date >> /var/tmp/dotfilesetup
 
 #install vim if needed
-type vim || sudo apt update && sudo apt install -y vim
+#TODO is this needed?: type vim || sudo apt update && sudo apt install -y vim
 
 #install spacevim
 curl -sLf https://spacevim.org/install.sh | bash

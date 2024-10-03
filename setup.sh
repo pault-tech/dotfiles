@@ -8,6 +8,9 @@ date >> /var/tmp/dotfilesetup
 
 #install spacevim
 curl -sLf https://spacevim.org/install.sh | bash
+echo "[[layers]]" >> ~/spacevim.toml
+echo "  name = "git"" >> ~/spacevim.toml
+echo "  git_plugin = 'fugitive'" >> ~/spacevim.toml
 
 #gnu screen if needed
 type screen || sudo apt update && sudo apt install -y screen

@@ -8,13 +8,16 @@ date >> /var/tmp/dotfilesetup
 
 #install spacevim
 curl -sLf https://spacevim.org/install.sh | bash
-echo "[[layers]]" >> ~/spacevim.toml
-echo "  name = \"git\"" >> ~/spacevim.toml
-echo "  \#git_plugin = 'fugitive'" >> ~/spacevim.toml
-echo "  git_plugin = 'git'" >> ~/spacevim.toml
-echo "[[layers]]" >> ~/spacevim.toml
-echo "  name = \"core\"" >> ~/spacevim.toml
-echo "  enable_smooth_scrolling = false" >> ~/spacevim.toml
+IFS=  && read -r -d '' TXT << EOM
+[[layers]]
+name = "git"
+git_plugin = 'git'
+
+[[layers]]
+name = "core"
+enable_smooth_scrolling = false
+EOM
+echo "$TXT" >> ~/spacevim.toml
 cat ~/spacevim.toml >> ~/.SpaceVim.d/init.toml
 
 #gnu screen if needed

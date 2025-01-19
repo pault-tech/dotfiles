@@ -24,7 +24,7 @@ cat ~/spacevim.toml >> ~/.SpaceVim.d/init.toml
 type screen || sudo apt update && sudo apt install -y screen
 
 echo 'echo "ctrl p codespace stop if using vscode ui"' > ~/.local/bin/css; chmod +x ~/.local/bin/css
-echo 'set -x; ~/dotfiles-spacemacs/setup.sh sup; set +x' > ~/.local/bin/sup; chmod +x ~/.local/bin/sup
+echo 'set -x; ~/dotfiles-spacemacs/setup.sh sup $1; set +x' > ~/.local/bin/sup; chmod +x ~/.local/bin/sup
 
 #clone other GH repos
 #NOTE: requires update to devcontainer.json https://github.com/orgs/community/discussions/36228
